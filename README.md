@@ -27,3 +27,9 @@ A terminal file explorer for windows powershell
     
     
 3. Now reload your powershell and whenever you call 'expl' (in this case) explorer will launch on the current directory you are in and you can navigate through keys
+(make sure u adjust font size to smaller and smaller to make it look better)
+
+### To-Do
+1. its seems annoying when items are much more than to be displayed all at once on the console and if we wanna navigate through..fix it
+2. include selection through name(alphabets)
+3. include icons and color for different extensions
