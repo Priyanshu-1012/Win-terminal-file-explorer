@@ -1,6 +1,13 @@
 # Win-terminal-file-explorer
 A terminal file explorer for windows powershell
 
+
+
+
+https://github.com/Priyanshu-1012/Win-terminal-file-explorer/assets/39450902/d6c2a71f-1e8f-4971-8fd1-372d19bd7602
+
+
+
 ## How to use?
 
 | keys  | Function |
