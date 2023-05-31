@@ -32,7 +32,7 @@ function Show-List {
                 if ($item.Extension -eq ".pdf" -or $item.Extension -eq ".epub") {
                     Write-Host "   $j $folderName" -ForegroundColor Red
                 }
-                elseif ($item.Extension -eq ".mkv" -or $item.Extension -eq ".mp4" -or $item.Extension -eq ".vid") {
+                elseif ($item.Extension -eq ".mkv" -or $item.Extension -eq ".mp4" -or $item.Extension -eq ".vid" -or $item.Extension -eq ".gif") {
                     Write-Host "   $j $folderName" -ForegroundColor Yellow
                 }
                 elseif ($item.Extension -eq ".docx" -or $item.Extension -eq ".txt" -or $item.Extension -eq ".doc" -or $item.Extension -eq "].doc" -or $item.Extension -eq ".yml" -or $item.Extension -eq ".toml") {
