@@ -1,5 +1,3 @@
-Import-Module -Name Terminal-Icons
-
 function Show-List {
     param (
         [Parameter(Mandatory = $true)]
@@ -18,18 +16,25 @@ function Show-List {
             $j = $i + 1
             $folderName = Split-Path -Leaf $Items[$i]
             $item = Get-Item $Items[$i]
-            
+
+            # Calculate the position of the cursor
+            $cursorLeft = 0
+            $cursorTop = $i
+
             if ($i -eq $selectedItemIndex) {
                 $selectedText = "   $j $folderName "
                 $escSeq = [char]27 + '[48;5;255m'  # Background color: Default
                 $selectedTextWithColor = $escSeq + $selectedText + [char]27 + '[0m'
+
+                # Set the cursor position and write the selected text
+                [System.Console]::SetCursorPosition($cursorLeft, $cursorTop)
                 Write-Host $selectedTextWithColor
             }
             elseif ($item.PSIsContainer) {
                 Write-Host "   $j $folderName" -ForegroundColor Cyan
             }
             else {
-                # Check if the file is a PDF and display it in red color
+                # Check file extensions and display with appropriate colors
                 if ($item.Extension -eq ".pdf" -or $item.Extension -eq ".epub") {
                     Write-Host "   $j $folderName" -ForegroundColor Red
                 }
@@ -121,8 +126,9 @@ function Show-List {
         }
     }
 }
+
 Import-Module -Name Terminal-Icons
-$items = Get-ChildItem | Select-Object -ExpandProperty FullName 
+$items = Get-ChildItem | Select-Object -ExpandProperty FullName
 $selectedItem = Show-List -Items $items
 
 if ($selectedItem) {
