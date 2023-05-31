@@ -14,13 +14,16 @@ A terminal file explorer for windows powershell
 | Esc  | quit the file explorer  |
 
 
-## How to include to your powershell
+## How to include it to your powershell
 
 1. Go to your profile.ps1 file by typing  ```code $profile``` or   ```vim $profile``` or  ```notepad $profile``` according to your favorite text editor.
+
 2. Make a fucntion there by the name convinient to you
     ```powershell
     Function expl {
     & 'path/to/your/ps1/file'
     }
     ```
+    
+    
 3. Now reload your powershell and whenever you call 'expl' (in this case) explorer will launch on the current directory you are in and you can navigate through keys
