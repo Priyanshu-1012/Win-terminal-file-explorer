@@ -1,6 +1,7 @@
 # Win-terminal-file-explorer
 A terminal file explorer for windows powershell. 
-Useful to quickly navigate through explorer on powershell and get the path of any selected file, reduces the redundant task of cd->ls->cd->ls while searching for a file/folder to perform operation on.
+Useful to quickly navigate through explorer on powershell and get the path of any selected file, reduces the redundant task of 
+cd->ls->cd->ls while searching for a file/folder to perform operation on.
 
 
 
