@@ -53,10 +53,11 @@ function Show-List {
             else {
                 # Check if the file is a PDF and display it in red color
                 if ($item.Extension -eq ".pdf" -or $item.Extension -eq ".epub") {
-                    Write-Host "     $folderName" -ForegroundColor Red
+                    Write-Host "   $j $folderName" -ForegroundColor Red
                 }
-                elseif ($item.Extension -eq ".mkv" -or $item.Extension -eq ".mp4" -or $item.Extension -eq ".vid" -or $item.Extension -eq ".avi" -or $item.Extension -eq ".wmv") {
-                    Write-Host "    󰕧 $folderName" -ForegroundColor Yellow
+                elseif ($item.Extension -eq ".mkv" -or $item.Extension -eq ".mp4" -or $item.Extension -eq ".vid" -or $item.Extension -eq ".gif") {
+                    Write-Host "   $j $folderName" -ForegroundColor Yellow
+>>>>>>> 62b0df53aeb8912fb73e5cb7b5f7cdd1496be68c
                 }
                 elseif ($item.Extension -eq ".txt" -or $item.Extension -eq ".toml" -or $item.Extension -eq ".def") {
                     Write-Host "     $folderName" -ForegroundColor blue
@@ -139,8 +140,8 @@ function Show-List {
                 elseif ($item.Extension -eq ".xlsx" -or $item.Extension -eq ".xls" -or $item.Extension -eq ".csv" -or $item.Extension -eq ".xlsm") {
                     Write-Host "     $folderName" -ForegroundColor green
                 }
-                elseif ($item.Extension -eq ".mkv" -or $item.Extension -eq ".mp4" -or $item.Extension -eq ".vid") {
-                    Write-Host "   $j $folderName" -ForegroundColor Yellow
+                elseif ($item.Extension -eq ".ppt" -or $item.Extension -eq ".pptx") {
+                    Write-Host "    󱎐 $folderName" -ForegroundColor red
                 }
                 elseif ($item.Extension -eq ".otf" -or $item.Extension -eq ".sub" -or $item.Extension -eq ".srt" -or $item.Extension -eq ".ttf") {
                     Write-Host "     $folderName" 
