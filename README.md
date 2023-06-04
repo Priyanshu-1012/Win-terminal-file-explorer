@@ -5,7 +5,11 @@ cd->ls->cd->ls while searching for a file/folder to perform operation on.
 
 
 
-https://github.com/Priyanshu-1012/Win-terminal-file-explorer/assets/39450902/d6c2a71f-1e8f-4971-8fd1-372d19bd7602
+
+https://github.com/Priyanshu-1012/Win-terminal-file-explorer/assets/39450902/bbb37792-4091-4e51-94a2-866602e731d9
+
+
+
 
 
 
