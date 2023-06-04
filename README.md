@@ -1,7 +1,8 @@
 # Win-terminal-file-explorer
 A terminal file explorer for windows powershell. 
-Useful to quickly navigate through explorer on powershell and get the path of any selected file, reduces the redundant task of 
+Useful to quickly navigate through explorer on powershell and get the path of any selected file, reduces the redundant task of
 cd->ls->cd->ls while searching for a file/folder to perform operation on.
+
 
 
 
@@ -25,7 +26,10 @@ https://github.com/Priyanshu-1012/Win-terminal-file-explorer/assets/39450902/bbb
 | Spacebar  | prints path of the directory you selected and exit |
 | Esc  | quit the file explorer  |
 
-
+### Prerequisite(s)
+ Nerd Fonts
+ 
+ 
 ## How to include it to your powershell
 
 1. Go to your profile.ps1 file by typing  ```code $profile``` or   ```vim $profile``` or  ```notepad $profile``` according to your favorite text editor.
