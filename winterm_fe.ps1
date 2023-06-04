@@ -57,7 +57,6 @@ function Show-List {
                 }
                 elseif ($item.Extension -eq ".mkv" -or $item.Extension -eq ".mp4" -or $item.Extension -eq ".vid" -or $item.Extension -eq ".gif") {
                     Write-Host "   $j $folderName" -ForegroundColor Yellow
->>>>>>> 62b0df53aeb8912fb73e5cb7b5f7cdd1496be68c
                 }
                 elseif ($item.Extension -eq ".txt" -or $item.Extension -eq ".toml" -or $item.Extension -eq ".def") {
                     Write-Host "     $folderName" -ForegroundColor blue
