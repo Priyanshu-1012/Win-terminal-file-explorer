@@ -139,8 +139,8 @@ function Show-List {
                 elseif ($item.Extension -eq ".xlsx" -or $item.Extension -eq ".xls" -or $item.Extension -eq ".csv" -or $item.Extension -eq ".xlsm") {
                     Write-Host "     $folderName" -ForegroundColor green
                 }
-                elseif ($item.Extension -eq ".ppt" -or $item.Extension -eq ".pptx") {
-                    Write-Host "    󱎐 $folderName" -ForegroundColor red
+                elseif ($item.Extension -eq ".mkv" -or $item.Extension -eq ".mp4" -or $item.Extension -eq ".vid") {
+                    Write-Host "   $j $folderName" -ForegroundColor Yellow
                 }
                 elseif ($item.Extension -eq ".otf" -or $item.Extension -eq ".sub" -or $item.Extension -eq ".srt" -or $item.Extension -eq ".ttf") {
                     Write-Host "     $folderName" 
