@@ -51,5 +51,5 @@ _Note: wherever the command says ~/Documents you can go on and type your preffer
 
 ### To-Do
 1. its seems annoying when items are much more than to be displayed all at once on the console and if we wanna navigate through..fix it
-2. include selection through name(alphabets)
-3. include icons and color for different extensions
+2. include selection through name(alphabets)<br>
+~3. include icons and color for different extensions~
