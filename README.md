@@ -31,18 +31,22 @@ https://github.com/Priyanshu-1012/Win-terminal-file-explorer/assets/39450902/bbb
  
  
 ## How to include it to your powershell
+_Note: wherever the command says ~/Documents you can go on and type your preffered location._
 
-1. Go to your profile.ps1 file by typing  ```code $profile``` or   ```vim $profile``` or  ```notepad $profile``` according to your favorite text editor.
+1. Type in powershell
+   ```powershell
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Priyanshu-1012/Win-terminal-file-explorer/master/winterm_fe.ps1" | Select-Object -ExpandProperty Content | Out-File -FilePath ~/Documents/winterm_fe.ps1 -Encoding UTF8
+   ```
 
-2. Make a fucntion there by the name convinient to you
+2. Next, paste the following command on terminal.
     ```powershell
-    Function expl {
-    & 'path/to/your/ps1/file'
-    }
+    "function fe {
+    `$scriptPath = Resolve-Path -Path '~/Documents/winterm_fe.ps1'
+    & `$scriptPath
+   }" | Add-Content $profile
     ```
     
-    
-3. Now reload your powershell and whenever you call 'expl' (in this case) explorer will launch on the current directory you are in and you can navigate through keys
+3. Now reload your powershell by command ```pwsh``` and now whenever you call ```fe``` , explorer will launch in the current directory you are in and you can navigate through keys
 (make sure u adjust font size to smaller and smaller to make it look better)
 
 ### To-Do
